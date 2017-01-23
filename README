@@ -1,0 +1,11 @@
+Name: Kevin de Haan
+Section: EB1
+
+Resources Used: http://pythex.org/, https://pyformat.info/,
+http://www.python-course.eu/python3_dictionaries.php
+
+Assumptions made: 
+Based on the output of the sample i/o file, underscores were considered to be punctuation and hyphens were not. Other punctuation was defined as being non-alphanumeric and non-whitespace. This may be easily changed by editing the regex for replacements. Formatting was designed to be as similar as possible to the example but may vary slightly. 
+
+Some General Information:
+Rather than converting the input file to a list, my program takes it as a dictionary with values corresponding to the amount of times a key is encountered. Additionally, to sort by frequency the stored value is converted to a list and the new frequency is added to a list that contains the quantity. I would have converted to a list earlier for clarity but it would make some operations more complicated than required due to the list not being an integer type. 

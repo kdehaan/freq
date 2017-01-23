@@ -1,0 +1,53 @@
+Sample input test-input.txt
+
+starts here ...
+This is THIS a line-
+break with hyphen- is break line
+break with This this line-
+break
+
+and a weird word :":: a&-b_#c
+and split-
+
+hyphen
+and end-
+... ends here
+
+Sample runs and outputs
+
+$ python3 freq.py --sort byfreq test-2.txt
+break   4   0.142857
+and     3   0.107143
+This    2   0.0714286
+a   2   0.0714286
+is  2   0.0714286
+line-   2   0.0714286
+with    2   0.0714286
+:"::    1   0.0357143
+THIS    1   0.0357143
+a&-b_#c     1   0.0357143
+end-    1   0.0357143
+hyphen  1   0.0357143
+hyphen-     1   0.0357143
+line    1   0.0357143
+split-  1   0.0357143
+this    1   0.0357143
+weird   1   0.0357143
+word    1   0.0357143
+
+$ python3 freq.py --sort byword --remove-punct --ignore-case test-2.txt
+a 	2 	0.0740741
+a-bc 	1 	0.037037
+and 	3 	0.111111
+break 	4 	0.148148
+end- 	1 	0.037037
+hyphen 	1 	0.037037
+hyphen- 	1 	0.037037
+is 	2 	0.0740741
+line 	1 	0.037037
+line- 	2 	0.0740741
+split- 	1 	0.037037
+this 	4 	0.148148
+weird 	1 	0.037037
+with 	2 	0.0740741
+word 	1 	0.037037
